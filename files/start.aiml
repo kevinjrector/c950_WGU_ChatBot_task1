@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- Initial greeting and entry point -->
+    <category>
+        <pattern>START</pattern>
+        <template>
+            Welcome to the CS Career Advisor Bot! 🎓
+            <br></br><br></br>
+            I'm here to help you discover which computer science career path aligns with your skills and interests. As a graduating CS student, you have many exciting opportunities ahead!
+            <br></br><br></br>
+            How would you like to proceed?
+            <button>
+                <text>Explore All 5 Career Paths</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Personalized Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Learn About Specific Job</text>
+                <postback>SEARCH CAREER</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative greeting patterns -->
+    <category>
+        <pattern>BEGIN</pattern>
+        <template><srai>START</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello! Welcome to the Computer Science Career Advisor.
+            <br></br>
+            Type "START" to begin exploring career options that match your degree!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <!-- Show all 5 career options -->
+    <category>
+        <pattern>SHOW ALL CAREERS</pattern>
+        <template>
+            Here are 5 excellent career paths for Computer Science graduates:
+            <br></br><br></br>
+            Click on any career to learn more about responsibilities, required skills, and growth opportunities.
+            <button>
+                <text>Software Engineer</text>
+                <postback>SOFTWARE ENGINEER</postback>
+            </button>
+            <button>
+                <text>Data Analyst</text>
+                <postback>DATA ANALYST</postback>
+            </button>
+            <button>
+                <text>Cybersecurity Analyst</text>
+                <postback>CYBERSECURITY ANALYST</postback>
+            </button>
+            <button>
+                <text>AI/Machine Learning Engineer</text>
+                <postback>AI ML ENGINEER</postback>
+            </button>
+            <button>
+                <text>DevOps Engineer</text>
+                <postback>DEVOPS ENGINEER</postback>
+            </button>
+            <button>
+                <text>← Back to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for showing careers -->
+    <category>
+        <pattern>LIST CAREERS</pattern>
+        <template><srai>SHOW ALL CAREERS</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT CAREERS</pattern>
+        <template><srai>SHOW ALL CAREERS</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SHOW JOBS</pattern>
+        <template><srai>SHOW ALL CAREERS</srai></template>
+    </category>
+    
+    <!-- Search/Ask about specific career -->
+    <category>
+        <pattern>SEARCH CAREER</pattern>
+        <template>
+            What type of role interests you? You can ask about:
+            <br></br><br></br>
+            • Software Engineer - Building applications and systems
+            <br></br>
+            • Data Analyst - Working with data and insights
+            <br></br>
+            • Cybersecurity Analyst - Protecting systems and networks
+            <br></br>
+            • AI/ML Engineer - Creating intelligent systems
+            <br></br>
+            • DevOps Engineer - Automating deployment and infrastructure
+            <br></br><br></br>
+            Type the job name or ask questions like "Tell me about software engineering"
+            <button>
+                <text>← Back to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Begin skills assessment -->
+    <category>
+        <pattern>ASSESS MY SKILLS</pattern>
+        <template>
+            Great! I'll ask you a few questions to understand your strengths and interests.
+            <br></br><br></br>
+            <think><set name="topic">skills_assessment</set></think>
+            First, let's explore your technical interests.
+            <br></br><br></br>
+            Which area excites you most?
+            <button>
+                <text>Building Software Applications</text>
+                <postback>INTEREST SOFTWARE</postback>
+            </button>
+            <button>
+                <text>Analyzing Data and Finding Patterns</text>
+                <postback>INTEREST DATA</postback>
+            </button>
+            <button>
+                <text>Security and System Protection</text>
+                <postback>INTEREST SECURITY</postback>
+            </button>
+            <button>
+                <text>Artificial Intelligence and Algorithms</text>
+                <postback>INTEREST AI</postback>
+            </button>
+            <button>
+                <text>Infrastructure and Automation</text>
+                <postback>INTEREST DEVOPS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for assessment -->
+    <category>
+        <pattern>FIND MY CAREER</pattern>
+        <template><srai>ASSESS MY SKILLS</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELP ME CHOOSE</pattern>
+        <template><srai>ASSESS MY SKILLS</srai></template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND CAREER</pattern>
+        <template><srai>ASSESS MY SKILLS</srai></template>
+    </category>
+    
+    <!-- Restart conversation -->
+    <category>
+        <pattern>RESTART</pattern>
+        <template>
+            <think>
+                <set name="topic"></set>
+                <set name="primary_interest"></set>
+                <set name="programming_level"></set>
+                <set name="work_preference"></set>
+            </think>
+            Restarting your career assessment...
+            <br></br>
+            <srai>START</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RESET</pattern>
+        <template><srai>RESTART</srai></template>
+    </category>
+    
+    <category>
+        <pattern>START OVER</pattern>
+        <template><srai>RESTART</srai></template>
+    </category>
+    
+</aiml>

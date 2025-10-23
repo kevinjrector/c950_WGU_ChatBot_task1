@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    I'm sorry, I don't understand that. 
+    <br/><br/>
+    You can type **"begin"** to restart the career advisor, or type **"help"** if you'd like to schedule time with a human advisor.
+  </template>
+</category>
+
+</aiml>

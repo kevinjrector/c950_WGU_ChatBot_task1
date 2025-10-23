@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- ============================================ -->
+    <!-- INTEREST IDENTIFICATION (First Question)     -->
+    <!-- ============================================ -->
+    
+    <!-- Software Development Interest -->
+    <category>
+        <pattern>INTEREST SOFTWARE</pattern>
+        <template>
+            <think><set name="primary_interest">software</set></think>
+            Great choice! Building software applications is at the heart of computer science.
+            <br></br><br></br>
+            Now, let's understand your technical approach better.
+            <br></br><br></br>
+            Which programming paradigm do you prefer?
+            <button>
+                <text>Object-Oriented (Java, C++, Python)</text>
+                <postback>PROGRAMMING OOP</postback>
+            </button>
+            <button>
+                <text>Full-Stack Web Development</text>
+                <postback>PROGRAMMING FULLSTACK</postback>
+            </button>
+            <button>
+                <text>Systems Programming (C, Rust, Low-level)</text>
+                <postback>PROGRAMMING SYSTEMS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Data Analysis Interest -->
+    <category>
+        <pattern>INTEREST DATA</pattern>
+        <template>
+            <think><set name="primary_interest">data</set></think>
+            Excellent! Data is transforming every industry.
+            <br></br><br></br>
+            Let's explore your analytical strengths.
+            <br></br><br></br>
+            Which aspect of data work appeals to you most?
+            <button>
+                <text>Statistical Analysis and Visualization</text>
+                <postback>DATA STATS</postback>
+            </button>
+            <button>
+                <text>Building Predictive Models (ML)</text>
+                <postback>DATA ML</postback>
+            </button>
+            <button>
+                <text>Database Design and Querying</text>
+                <postback>DATA DATABASE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Security Interest -->
+    <category>
+        <pattern>INTEREST SECURITY</pattern>
+        <template>
+            <think><set name="primary_interest">security</set></think>
+            Cybersecurity is one of the fastest-growing fields in tech!
+            <br></br><br></br>
+            Let's identify your security focus area.
+            <br></br><br></br>
+            What aspect of security interests you most?
+            <button>
+                <text>Network Security and Firewalls</text>
+                <postback>SECURITY NETWORK</postback>
+            </button>
+            <button>
+                <text>Threat Detection and Response</text>
+                <postback>SECURITY THREAT</postback>
+            </button>
+            <button>
+                <text>Security Testing and Penetration</text>
+                <postback>SECURITY TESTING</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- AI/ML Interest -->
+    <category>
+        <pattern>INTEREST AI</pattern>
+        <template>
+            <think><set name="primary_interest">ai</set></think>
+            Artificial Intelligence is revolutionizing technology!
+            <br></br><br></br>
+            Let's understand your AI/ML background.
+            <br></br><br></br>
+            How strong is your mathematics background?
+            <button>
+                <text>Strong (Calculus, Linear Algebra, Statistics)</text>
+                <postback>MATH STRONG</postback>
+            </button>
+            <button>
+                <text>Moderate (Basic Statistics, Some Calculus)</text>
+                <postback>MATH MODERATE</postback>
+            </button>
+            <button>
+                <text>Prefer Practical Implementation Over Theory</text>
+                <postback>MATH PRACTICAL</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- DevOps Interest -->
+    <category>
+        <pattern>INTEREST DEVOPS</pattern>
+        <template>
+            <think><set name="primary_interest">devops</set></think>
+            DevOps is essential for modern software delivery!
+            <br></br><br></br>
+            Let's assess your infrastructure experience.
+            <br></br><br></br>
+            Which area do you have the most experience with?
+            <button>
+                <text>Cloud Platforms (AWS, Azure, GCP)</text>
+                <postback>DEVOPS CLOUD</postback>
+            </button>
+            <button>
+                <text>Containerization (Docker, Kubernetes)</text>
+                <postback>DEVOPS CONTAINERS</postback>
+            </button>
+            <button>
+                <text>Automation and Scripting</text>
+                <postback>DEVOPS AUTOMATION</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- SOFTWARE ENGINEERING PATH                    -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>PROGRAMMING OOP</pattern>
+        <template>
+            <think><set name="programming_style">oop</set></think>
+            Object-oriented programming is fundamental to software engineering!
+            <br></br><br></br>
+            One more question: What type of projects do you enjoy?
+            <button>
+                <text>Large-scale enterprise applications</text>
+                <postback>PROJECT ENTERPRISE</postback>
+            </button>
+            <button>
+                <text>Mobile or desktop applications</text>
+                <postback>PROJECT APPLICATIONS</postback>
+            </button>
+            <button>
+                <text>Variety of different projects</text>
+                <postback>PROJECT VARIETY</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROGRAMMING FULLSTACK</pattern>
+        <template>
+            <think><set name="programming_style">fullstack</set></think>
+            Full-stack development offers great versatility!
+            <br></br><br></br>
+            Do you prefer working more on:
+            <button>
+                <text>Frontend (User Interfaces)</text>
+                <postback>PROJECT FRONTEND</postback>
+            </button>
+            <button>
+                <text>Backend (APIs, Databases)</text>
+                <postback>PROJECT BACKEND</postback>
+            </button>
+            <button>
+                <text>Both Equally</text>
+                <postback>PROJECT FULLSTACK</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROGRAMMING SYSTEMS</pattern>
+        <template>
+            <think><set name="programming_style">systems</set></think>
+            Systems programming requires deep technical knowledge!
+            <br></br><br></br>
+            This could lead to specialized software engineering or DevOps roles.
+            <br></br><br></br>
+            Are you more interested in:
+            <button>
+                <text>Building high-performance software</text>
+                <postback>RECOMMEND SOFTWARE ENGINEER</postback>
+            </button>
+            <button>
+                <text>Infrastructure and deployment automation</text>
+                <postback>RECOMMEND DEVOPS ENGINEER</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Project type recommendations for Software Engineer -->
+    <category>
+        <pattern>PROJECT ENTERPRISE</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT APPLICATIONS</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT VARIETY</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT FRONTEND</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT BACKEND</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PROJECT FULLSTACK</pattern>
+        <template><srai>RECOMMEND SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- DATA ANALYSIS PATH                           -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>DATA STATS</pattern>
+        <template>
+            <think><set name="data_focus">statistics</set></think>
+            Statistical analysis and visualization are core data analyst skills!
+            <br></br><br></br>
+            Do you have experience with tools like:
+            <button>
+                <text>Python (Pandas, NumPy, Matplotlib)</text>
+                <postback>TOOLS PYTHON DATA</postback>
+            </button>
+            <button>
+                <text>R or Statistical Software</text>
+                <postback>TOOLS R</postback>
+            </button>
+            <button>
+                <text>SQL and Excel</text>
+                <postback>TOOLS SQL</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA ML</pattern>
+        <template>
+            <think><set name="data_focus">machine_learning</set></think>
+            Building predictive models combines data analysis with AI!
+            <br></br><br></br>
+            This path could lead to either Data Analyst or AI/ML Engineer roles.
+            <br></br><br></br>
+            Would you prefer:
+            <button>
+                <text>Analyzing existing data for insights</text>
+                <postback>RECOMMEND DATA ANALYST</postback>
+            </button>
+            <button>
+                <text>Building and deploying ML models</text>
+                <postback>RECOMMEND AI ML ENGINEER</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA DATABASE</pattern>
+        <template>
+            <think><set name="data_focus">database</set></think>
+            Database expertise is valuable across many roles!
+            <br></br><br></br>
+            Do you prefer:
+            <button>
+                <text>Querying and analyzing data</text>
+                <postback>RECOMMEND DATA ANALYST</postback>
+            </button>
+            <button>
+                <text>Designing database architectures</text>
+                <postback>RECOMMEND SOFTWARE ENGINEER</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Data tools lead to Data Analyst -->
+    <category>
+        <pattern>TOOLS PYTHON DATA</pattern>
+        <template><srai>RECOMMEND DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TOOLS R</pattern>
+        <template><srai>RECOMMEND DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TOOLS SQL</pattern>
+        <template><srai>RECOMMEND DATA ANALYST</srai></template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- CYBERSECURITY PATH                           -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>SECURITY NETWORK</pattern>
+        <template>
+            <think><set name="security_focus">network</set></think>
+            <srai>RECOMMEND CYBERSECURITY ANALYST</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SECURITY THREAT</pattern>
+        <template>
+            <think><set name="security_focus">threat</set></think>
+            <srai>RECOMMEND CYBERSECURITY ANALYST</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SECURITY TESTING</pattern>
+        <template>
+            <think><set name="security_focus">testing</set></think>
+            <srai>RECOMMEND CYBERSECURITY ANALYST</srai>
+        </template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- AI/ML ENGINEERING PATH                       -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>MATH STRONG</pattern>
+        <template>
+            <think><set name="math_level">strong</set></think>
+            Excellent! Strong math skills are essential for AI/ML engineering.
+            <br></br><br></br>
+            Do you have experience with:
+            <button>
+                <text>Deep Learning Frameworks (TensorFlow, PyTorch)</text>
+                <postback>ML FRAMEWORKS</postback>
+            </button>
+            <button>
+                <text>Traditional ML (Scikit-learn, algorithms)</text>
+                <postback>ML TRADITIONAL</postback>
+            </button>
+            <button>
+                <text>Still learning ML concepts</text>
+                <postback>ML LEARNING</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MATH MODERATE</pattern>
+        <template>
+            <think><set name="math_level">moderate</set></think>
+            That's a good foundation! You can grow your ML skills.
+            <br></br><br></br>
+            Would you prefer:
+            <button>
+                <text>Building ML models and algorithms</text>
+                <postback>RECOMMEND AI ML ENGINEER</postback>
+            </button>
+            <button>
+                <text>Applying ML to analyze data</text>
+                <postback>RECOMMEND DATA ANALYST</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MATH PRACTICAL</pattern>
+        <template>
+            <think><set name="math_level">practical</set></think>
+            Practical implementation skills are valuable!
+            <br></br><br></br>
+            You might excel as a Data Analyst using ML tools.
+            <br></br>
+            <srai>RECOMMEND DATA ANALYST</srai>
+        </template>
+    </category>
+    
+    <!-- ML Experience paths -->
+    <category>
+        <pattern>ML FRAMEWORKS</pattern>
+        <template><srai>RECOMMEND AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>ML TRADITIONAL</pattern>
+        <template><srai>RECOMMEND AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>ML LEARNING</pattern>
+        <template><srai>RECOMMEND AI ML ENGINEER</srai></template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- DEVOPS ENGINEERING PATH                      -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>DEVOPS CLOUD</pattern>
+        <template>
+            <think><set name="devops_focus">cloud</set></think>
+            <srai>RECOMMEND DEVOPS ENGINEER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DEVOPS CONTAINERS</pattern>
+        <template>
+            <think><set name="devops_focus">containers</set></think>
+            <srai>RECOMMEND DEVOPS ENGINEER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DEVOPS AUTOMATION</pattern>
+        <template>
+            <think><set name="devops_focus">automation</set></think>
+            <srai>RECOMMEND DEVOPS ENGINEER</srai>
+        </template>
+    </category>
+    
+    <!-- ============================================ -->
+    <!-- RECOMMENDATION OUTPUTS                       -->
+    <!-- ============================================ -->
+    
+    <category>
+        <pattern>RECOMMEND SOFTWARE ENGINEER</pattern>
+        <template>
+            <think><set name="recommended_career">software_engineer</set></think>
+            🎯 Based on your responses, I recommend:
+            <br></br><br></br>
+            <b>SOFTWARE ENGINEER</b>
+            <br></br><br></br>
+            Your skills in <get name="programming_style"/> programming and interest in building applications make you an excellent fit for software engineering!
+            <br></br><br></br>
+            <button>
+                <text>Learn More About Software Engineer</text>
+                <postback>SOFTWARE ENGINEER</postback>
+            </button>
+            <button>
+                <text>See Other Career Options</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Retake Assessment</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND DATA ANALYST</pattern>
+        <template>
+            <think><set name="recommended_career">data_analyst</set></think>
+            🎯 Based on your responses, I recommend:
+            <br></br><br></br>
+            <b>DATA ANALYST</b>
+            <br></br><br></br>
+            Your analytical mindset and interest in working with data make you a great candidate for data analysis roles!
+            <br></br><br></br>
+            <button>
+                <text>Learn More About Data Analyst</text>
+                <postback>DATA ANALYST</postback>
+            </button>
+            <button>
+                <text>See Other Career Options</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Retake Assessment</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND CYBERSECURITY ANALYST</pattern>
+        <template>
+            <think><set name="recommended_career">cybersecurity_analyst</set></think>
+            🎯 Based on your responses, I recommend:
+            <br></br><br></br>
+            <b>CYBERSECURITY ANALYST</b>
+            <br></br><br></br>
+            Your interest in security and protecting systems makes you an ideal fit for cybersecurity!
+            <br></br><br></br>
+            <button>
+                <text>Learn More About Cybersecurity Analyst</text>
+                <postback>CYBERSECURITY ANALYST</postback>
+            </button>
+            <button>
+                <text>See Other Career Options</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Retake Assessment</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND AI ML ENGINEER</pattern>
+        <template>
+            <think><set name="recommended_career">ai_ml_engineer</set></think>
+            🎯 Based on your responses, I recommend:
+            <br></br><br></br>
+            <b>AI/MACHINE LEARNING ENGINEER</b>
+            <br></br><br></br>
+            Your mathematical foundation and passion for AI make you well-suited for machine learning engineering!
+            <br></br><br></br>
+            <button>
+                <text>Learn More About AI/ML Engineer</text>
+                <postback>AI ML ENGINEER</postback>
+            </button>
+            <button>
+                <text>See Other Career Options</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Retake Assessment</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND DEVOPS ENGINEER</pattern>
+        <template>
+            <think><set name="recommended_career">devops_engineer</set></think>
+            🎯 Based on your responses, I recommend:
+            <br></br><br></br>
+            <b>DEVOPS ENGINEER</b>
+            <br></br><br></br>
+            Your expertise in infrastructure and automation makes you a perfect match for DevOps engineering!
+            <br></br><br></br>
+            <button>
+                <text>Learn More About DevOps Engineer</text>
+                <postback>DEVOPS ENGINEER</postback>
+            </button>
+            <button>
+                <text>See Other Career Options</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Retake Assessment</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+</aiml>
