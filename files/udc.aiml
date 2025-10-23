@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-<category>
-  <pattern>*</pattern>
-  <template>
-    I'm sorry, I don't understand that. 
-    <br/><br/>
-    You can type **"begin"** to restart the career advisor, or type **"help"** if you'd like to schedule time with a human advisor.
-  </template>
-</category>
-
+    
+    <!-- Ultimate Default Category - Catches all unmatched inputs -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I'm sorry, I didn't understand that response.
+            <br></br><br></br>
+            I'm a career advisor chatbot specializing in Computer Science careers. I can help you explore 5 different career paths and recommend one based on your interests and skills.
+            <br></br><br></br>
+            Here are some things you can try:
+            <br></br>
+            - Type "START" to return to the main menu
+            <br></br>
+            - Type "HELP" to see what I can do
+            <br></br>
+            - Type "SHOW ALL CAREERS" to browse career options
+            <br></br>
+            - Type "ASSESS MY SKILLS" for a personalized recommendation
+            <br></br><br></br>
+            <button>
+                <text>Main Menu</text>
+                <postback>START</postback>
+            </button>
+            <button>
+                <text>View Help</text>
+                <postback>HELP</postback>
+            </button>
+            <button>
+                <text>Browse Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+        </template>
+    </category>
+    
 </aiml>

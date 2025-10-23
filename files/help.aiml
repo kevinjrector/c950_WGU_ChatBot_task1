@@ -1,4 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main Help Pattern -->
+    <category>
+        <pattern>HELP</pattern>
+        <template>
+            HELP AND SUPPORT
+            <br></br><br></br>
+            I'm here to help you explore computer science career options! Here's what I can do:
+            <br></br><br></br>
+            AVAILABLE OPTIONS:
+            <br></br>
+            - View all 5 career paths for CS graduates
+            <br></br>
+            - Take a skills assessment to get personalized recommendations
+            <br></br>
+            - Learn detailed information about each career
+            <br></br>
+            - Restart your assessment at any time
+            <br></br><br></br>
+            COMMON COMMANDS:
+            <br></br>
+            - Type "START" to return to the main menu
+            <br></br>
+            - Type "SHOW ALL CAREERS" to browse all options
+            <br></br>
+            - Type "ASSESS MY SKILLS" for personalized recommendations
+            <br></br>
+            - Type "RESTART" to clear your responses and start over
+            <br></br><br></br>
+            Need additional assistance? Contact our career services team:
+            <br></br>
+            Phone: (555) 123-4567
+            <br></br>
+            Email: careerservices@university.edu
+            <br></br><br></br>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+            <button>
+                <text>Browse All Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative Help Patterns -->
+    <category>
+        <pattern>HELP ME</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>I NEED HELP</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>ASSISTANCE</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SUPPORT</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT CAN YOU DO</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOW DO I USE THIS</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ HELP ^</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <!-- Contact Information -->
+    <category>
+        <pattern>CONTACT</pattern>
+        <template>
+            CONTACT CAREER SERVICES
+            <br></br><br></br>
+            If you need additional assistance beyond what this chatbot provides, please reach out to our career services team:
+            <br></br><br></br>
+            Phone: (555) 123-4567
+            <br></br>
+            Email: careerservices@university.edu
+            <br></br>
+            Office Hours: Monday-Friday, 9:00 AM - 5:00 PM
+            <br></br><br></br>
+            We're here to help you succeed in your career journey!
+            <br></br><br></br>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CONTACT INFO</pattern>
+        <template><srai>CONTACT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>CONTACT INFORMATION</pattern>
+        <template><srai>CONTACT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOW DO I CONTACT</pattern>
+        <template><srai>CONTACT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PHONE NUMBER</pattern>
+        <template><srai>CONTACT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>EMAIL</pattern>
+        <template><srai>CONTACT</srai></template>
+    </category>
+    
+    <!-- About the Bot -->
+    <category>
+        <pattern>ABOUT</pattern>
+        <template>
+            ABOUT THIS CAREER ADVISOR BOT
+            <br></br><br></br>
+            I am an AI-powered career advisor chatbot designed to help Computer Science students at our university explore career options and make informed decisions about their future.
+            <br></br><br></br>
+            I can help you:
+            <br></br>
+            - Discover 5 popular CS career paths
+            <br></br>
+            - Identify careers that match your interests and skills
+            <br></br>
+            - Learn about job responsibilities, required skills, and salary ranges
+            <br></br>
+            - Connect with human advisors for more personalized guidance
+            <br></br><br></br>
+            Created to support the growing enrollment in our Computer Science program and provide career guidance to all graduating students.
+            <br></br><br></br>
+            <button>
+                <text>Get Started</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ABOUT YOU</pattern>
+        <template><srai>ABOUT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template><srai>ABOUT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template><srai>ABOUT</srai></template>
+    </category>
+    
+    <!-- Stuck/Lost/Confused -->
+    <category>
+        <pattern>I AM STUCK</pattern>
+        <template>
+            No problem! Let me help you get back on track.
+            <br></br><br></br>
+            You can:
+            <br></br>
+            - Type "START" to go back to the main menu
+            <br></br>
+            - Type "HELP" to see all available commands
+            <br></br>
+            - Type "RESTART" to clear your responses and start fresh
+            <br></br><br></br>
+            <button>
+                <text>Main Menu</text>
+                <postback>START</postback>
+            </button>
+            <button>
+                <text>View Help</text>
+                <postback>HELP</postback>
+            </button>
+            <button>
+                <text>Restart Assessment</text>
+                <postback>RESTART</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I AM LOST</pattern>
+        <template><srai>I AM STUCK</srai></template>
+    </category>
+    
+    <category>
+        <pattern>I AM CONFUSED</pattern>
+        <template><srai>I AM STUCK</srai></template>
+    </category>
+    
+    <category>
+        <pattern>I DO NOT UNDERSTAND</pattern>
+        <template><srai>I AM STUCK</srai></template>
+    </category>
+    
+    <category>
+        <pattern>CONFUSED</pattern>
+        <template><srai>I AM STUCK</srai></template>
+    </category>
+    
+    <!-- Thank You -->
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! I'm glad I could help you explore career options.
+            <br></br><br></br>
+            Is there anything else you'd like to know?
+            <br></br><br></br>
+            <button>
+                <text>Explore More Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>THANKS</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+    
+    <category>
+        <pattern>THX</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+    
+    <category>
+        <pattern>THANK YOU VERY MUCH</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+    
+    <!-- Goodbye/Exit -->
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+            Goodbye! Best of luck with your career journey in Computer Science!
+            <br></br><br></br>
+            If you need more guidance later, just come back and type "START" to begin again.
+            <br></br><br></br>
+            Remember, you can always contact our career services team at careerservices@university.edu or call (555) 123-4567.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>BYE</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SEE YOU</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>EXIT</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>QUIT</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
 </aiml>
