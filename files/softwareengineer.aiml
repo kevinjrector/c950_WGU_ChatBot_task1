@@ -1,4 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main Software Engineer Pattern -->
+    <category>
+        <pattern>SOFTWARE ENGINEER</pattern>
+        <template>
+            SOFTWARE ENGINEER
+            <br></br><br></br>
+            Software engineers design, develop, test, and maintain software applications and systems. They work on everything from mobile apps to enterprise systems, using programming languages like Java, Python, C++, and JavaScript.
+            <br></br><br></br>
+            KEY RESPONSIBILITIES:
+            <br></br>
+            - Writing and testing code for software applications
+            <br></br>
+            - Collaborating with teams to design software solutions
+            <br></br>
+            - Debugging and troubleshooting software issues
+            <br></br>
+            - Maintaining and updating existing software systems
+            <br></br>
+            - Participating in code reviews and technical discussions
+            <br></br><br></br>
+            REQUIRED SKILLS:
+            <br></br>
+            - Proficiency in programming languages (Java, Python, C++, JavaScript)
+            <br></br>
+            - Understanding of data structures and algorithms
+            <br></br>
+            - Problem-solving and analytical thinking
+            <br></br>
+            - Version control systems (Git)
+            <br></br>
+            - Software development methodologies (Agile, Scrum)
+            <br></br><br></br>
+            SALARY RANGE: 70,000 - 130,000 USD annually (entry to mid-level)
+            <br></br><br></br>
+            <link>
+                <text>Learn more about Software Engineers</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+            </link>
+            <br></br><br></br>
+            <button>
+                <text>Explore Other Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Career Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for Software Engineer -->
+    <category>
+        <pattern>SOFTWARE DEVELOPER</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT SOFTWARE ENGINEER</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT SOFTWARE ENGINEERING</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS A SOFTWARE ENGINEER</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A SOFTWARE ENGINEER DO</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE ENGINEERING</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SOFTWARE ENGINEER ^</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SOFTWARE DEVELOPER ^</pattern>
+        <template><srai>SOFTWARE ENGINEER</srai></template>
+    </category>
+    
 </aiml>

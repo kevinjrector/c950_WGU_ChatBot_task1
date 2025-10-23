@@ -12,9 +12,9 @@
             <think><set name="primary_interest">software</set></think>
             Great choice! Building software applications is at the heart of computer science.
             <br></br><br></br>
-            Now, let's understand your technical approach better.
+            Let's explore your programming interests and experience.
             <br></br><br></br>
-            Which programming paradigm do you prefer?
+            Which programming style interests you most or have you studied?
             <button>
                 <text>Object-Oriented (Java, C++, Python)</text>
                 <postback>PROGRAMMING OOP</postback>
@@ -27,6 +27,10 @@
                 <text>Systems Programming (C, Rust, Low-level)</text>
                 <postback>PROGRAMMING SYSTEMS</postback>
             </button>
+            <button>
+                <text>I'm still learning programming basics</text>
+                <postback>PROGRAMMING BEGINNER</postback>
+            </button>
         </template>
     </category>
     
@@ -37,20 +41,24 @@
             <think><set name="primary_interest">data</set></think>
             Excellent! Data is transforming every industry.
             <br></br><br></br>
-            Let's explore your analytical strengths.
+            Let's explore what aspects of data work appeal to you.
             <br></br><br></br>
-            Which aspect of data work appeals to you most?
+            Which area sounds most interesting to you?
             <button>
                 <text>Statistical Analysis and Visualization</text>
                 <postback>DATA STATS</postback>
             </button>
             <button>
-                <text>Building Predictive Models (ML)</text>
+                <text>Building Predictive Models (Machine Learning)</text>
                 <postback>DATA ML</postback>
             </button>
             <button>
-                <text>Database Design and Querying</text>
+                <text>Database Design and SQL Queries</text>
                 <postback>DATA DATABASE</postback>
+            </button>
+            <button>
+                <text>I'm interested but haven't studied these yet</text>
+                <postback>DATA BEGINNER</postback>
             </button>
         </template>
     </category>
@@ -62,20 +70,24 @@
             <think><set name="primary_interest">security</set></think>
             Cybersecurity is one of the fastest-growing fields in tech!
             <br></br><br></br>
-            Let's identify your security focus area.
+            Let's identify which security area interests you most.
             <br></br><br></br>
-            What aspect of security interests you most?
+            What aspect of security would you like to learn more about or work in?
             <button>
                 <text>Network Security and Firewalls</text>
                 <postback>SECURITY NETWORK</postback>
             </button>
             <button>
-                <text>Threat Detection and Response</text>
+                <text>Threat Detection and Incident Response</text>
                 <postback>SECURITY THREAT</postback>
             </button>
             <button>
-                <text>Security Testing and Penetration</text>
+                <text>Security Testing and Ethical Hacking</text>
                 <postback>SECURITY TESTING</postback>
+            </button>
+            <button>
+                <text>All aspects sound interesting</text>
+                <postback>SECURITY GENERAL</postback>
             </button>
         </template>
     </category>
@@ -87,19 +99,23 @@
             <think><set name="primary_interest">ai</set></think>
             Artificial Intelligence is revolutionizing technology!
             <br></br><br></br>
-            Let's understand your AI/ML background.
+            Let's understand your math background, which is important for AI/ML work.
             <br></br><br></br>
-            How strong is your mathematics background?
+            How comfortable are you with mathematics like calculus, linear algebra, and statistics?
             <button>
-                <text>Strong (Calculus, Linear Algebra, Statistics)</text>
+                <text>Very Comfortable - I enjoy advanced math</text>
                 <postback>MATH STRONG</postback>
             </button>
             <button>
-                <text>Moderate (Basic Statistics, Some Calculus)</text>
+                <text>Somewhat Comfortable - I've taken the required courses</text>
                 <postback>MATH MODERATE</postback>
             </button>
             <button>
-                <text>Prefer Practical Implementation Over Theory</text>
+                <text>Still Learning - Math is challenging for me</text>
+                <postback>MATH LEARNING</postback>
+            </button>
+            <button>
+                <text>Prefer Practical Coding Over Theory</text>
                 <postback>MATH PRACTICAL</postback>
             </button>
         </template>
@@ -112,9 +128,9 @@
             <think><set name="primary_interest">devops</set></think>
             DevOps is essential for modern software delivery!
             <br></br><br></br>
-            Let's assess your infrastructure experience.
+            Let's explore your experience or interest in infrastructure topics.
             <br></br><br></br>
-            Which area do you have the most experience with?
+            Which area have you studied or would like to work with?
             <button>
                 <text>Cloud Platforms (AWS, Azure, GCP)</text>
                 <postback>DEVOPS CLOUD</postback>
@@ -124,8 +140,12 @@
                 <postback>DEVOPS CONTAINERS</postback>
             </button>
             <button>
-                <text>Automation and Scripting</text>
+                <text>Automation and Scripting (Bash, Python)</text>
                 <postback>DEVOPS AUTOMATION</postback>
+            </button>
+            <button>
+                <text>I'm new to these topics but interested</text>
+                <postback>DEVOPS BEGINNER</postback>
             </button>
         </template>
     </category>
@@ -140,7 +160,7 @@
             <think><set name="programming_style">oop</set></think>
             Object-oriented programming is fundamental to software engineering!
             <br></br><br></br>
-            One more question: What type of projects do you enjoy?
+            One more question: What type of projects sound interesting to you?
             <button>
                 <text>Large-scale enterprise applications</text>
                 <postback>PROJECT ENTERPRISE</postback>
@@ -150,7 +170,7 @@
                 <postback>PROJECT APPLICATIONS</postback>
             </button>
             <button>
-                <text>Variety of different projects</text>
+                <text>I like variety in projects</text>
                 <postback>PROJECT VARIETY</postback>
             </button>
         </template>
@@ -162,17 +182,17 @@
             <think><set name="programming_style">fullstack</set></think>
             Full-stack development offers great versatility!
             <br></br><br></br>
-            Do you prefer working more on:
+            Which part of web development do you find more interesting?
             <button>
-                <text>Frontend (User Interfaces)</text>
+                <text>Frontend - User Interfaces and Design</text>
                 <postback>PROJECT FRONTEND</postback>
             </button>
             <button>
-                <text>Backend (APIs, Databases)</text>
+                <text>Backend - APIs, Databases, Logic</text>
                 <postback>PROJECT BACKEND</postback>
             </button>
             <button>
-                <text>Both Equally</text>
+                <text>Both frontend and backend equally</text>
                 <postback>PROJECT FULLSTACK</postback>
             </button>
         </template>
@@ -184,7 +204,7 @@
             <think><set name="programming_style">systems</set></think>
             Systems programming requires deep technical knowledge!
             <br></br><br></br>
-            This could lead to specialized software engineering or DevOps roles.
+            This could lead you toward specialized software engineering or infrastructure roles.
             <br></br><br></br>
             Are you more interested in:
             <button>
@@ -195,6 +215,18 @@
                 <text>Infrastructure and deployment automation</text>
                 <postback>RECOMMEND DEVOPS ENGINEER</postback>
             </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROGRAMMING BEGINNER</pattern>
+        <template>
+            <think><set name="programming_style">beginner</set></think>
+            That's perfectly fine! Everyone starts somewhere, and your CS degree will build these skills.
+            <br></br><br></br>
+            Software engineering is a great entry point where you'll continue learning on the job.
+            <br></br>
+            <srai>RECOMMEND SOFTWARE ENGINEER</srai>
         </template>
     </category>
     
@@ -239,18 +271,22 @@
             <think><set name="data_focus">statistics</set></think>
             Statistical analysis and visualization are core data analyst skills!
             <br></br><br></br>
-            Do you have experience with tools like:
+            Have you taken courses or worked with any data analysis tools?
             <button>
-                <text>Python (Pandas, NumPy, Matplotlib)</text>
+                <text>Yes - Python (Pandas, NumPy, Matplotlib)</text>
                 <postback>TOOLS PYTHON DATA</postback>
             </button>
             <button>
-                <text>R or Statistical Software</text>
+                <text>Yes - R or other statistical software</text>
                 <postback>TOOLS R</postback>
             </button>
             <button>
-                <text>SQL and Excel</text>
+                <text>Yes - SQL and Excel</text>
                 <postback>TOOLS SQL</postback>
+            </button>
+            <button>
+                <text>Not yet, but I'm eager to learn</text>
+                <postback>TOOLS NONE DATA</postback>
             </button>
         </template>
     </category>
@@ -263,13 +299,13 @@
             <br></br><br></br>
             This path could lead to either Data Analyst or AI/ML Engineer roles.
             <br></br><br></br>
-            Would you prefer:
+            Which aspect appeals to you more?
             <button>
-                <text>Analyzing existing data for insights</text>
+                <text>Analyzing existing data to find insights</text>
                 <postback>RECOMMEND DATA ANALYST</postback>
             </button>
             <button>
-                <text>Building and deploying ML models</text>
+                <text>Building and training ML algorithms</text>
                 <postback>RECOMMEND AI ML ENGINEER</postback>
             </button>
         </template>
@@ -281,15 +317,27 @@
             <think><set name="data_focus">database</set></think>
             Database expertise is valuable across many roles!
             <br></br><br></br>
-            Do you prefer:
+            What interests you more?
             <button>
-                <text>Querying and analyzing data</text>
+                <text>Querying and analyzing data for insights</text>
                 <postback>RECOMMEND DATA ANALYST</postback>
             </button>
             <button>
-                <text>Designing database architectures</text>
+                <text>Designing database systems and architecture</text>
                 <postback>RECOMMEND SOFTWARE ENGINEER</postback>
             </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA BEGINNER</pattern>
+        <template>
+            <think><set name="data_focus">beginner</set></think>
+            No problem! Data analysis is a skill you can develop throughout your career.
+            <br></br><br></br>
+            Many data analysts start with basic Excel and SQL skills, then grow from there.
+            <br></br>
+            <srai>RECOMMEND DATA ANALYST</srai>
         </template>
     </category>
     
@@ -306,6 +354,11 @@
     
     <category>
         <pattern>TOOLS SQL</pattern>
+        <template><srai>RECOMMEND DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TOOLS NONE DATA</pattern>
         <template><srai>RECOMMEND DATA ANALYST</srai></template>
     </category>
     
@@ -337,6 +390,16 @@
         </template>
     </category>
     
+    <category>
+        <pattern>SECURITY GENERAL</pattern>
+        <template>
+            <think><set name="security_focus">general</set></think>
+            That's great! Cybersecurity offers many specializations you can explore.
+            <br></br>
+            <srai>RECOMMEND CYBERSECURITY ANALYST</srai>
+        </template>
+    </category>
+    
     <!-- ============================================ -->
     <!-- AI/ML ENGINEERING PATH                       -->
     <!-- ============================================ -->
@@ -347,17 +410,17 @@
             <think><set name="math_level">strong</set></think>
             Excellent! Strong math skills are essential for AI/ML engineering.
             <br></br><br></br>
-            Do you have experience with:
+            Have you taken any courses or done projects involving machine learning?
             <button>
-                <text>Deep Learning Frameworks (TensorFlow, PyTorch)</text>
+                <text>Yes - Deep Learning (Neural Networks, CNNs)</text>
                 <postback>ML FRAMEWORKS</postback>
             </button>
             <button>
-                <text>Traditional ML (Scikit-learn, algorithms)</text>
+                <text>Yes - Traditional ML (Classification, Regression)</text>
                 <postback>ML TRADITIONAL</postback>
             </button>
             <button>
-                <text>Still learning ML concepts</text>
+                <text>Not yet, but I'm ready to learn</text>
                 <postback>ML LEARNING</postback>
             </button>
         </template>
@@ -367,16 +430,36 @@
         <pattern>MATH MODERATE</pattern>
         <template>
             <think><set name="math_level">moderate</set></think>
-            That's a good foundation! You can grow your ML skills.
+            That's a good foundation! Many ML engineers strengthen their math while working.
             <br></br><br></br>
-            Would you prefer:
+            Which path interests you more?
             <button>
-                <text>Building ML models and algorithms</text>
+                <text>Building and training ML models</text>
                 <postback>RECOMMEND AI ML ENGINEER</postback>
             </button>
             <button>
-                <text>Applying ML to analyze data</text>
+                <text>Using ML tools to analyze data</text>
                 <postback>RECOMMEND DATA ANALYST</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MATH LEARNING</pattern>
+        <template>
+            <think><set name="math_level">learning</set></think>
+            That's honest and shows self-awareness! 
+            <br></br><br></br>
+            You might want to consider roles where you can gradually build these skills.
+            <br></br><br></br>
+            Would you prefer:
+            <button>
+                <text>Working with data and gradually learning ML</text>
+                <postback>RECOMMEND DATA ANALYST</postback>
+            </button>
+            <button>
+                <text>Focusing on software development instead</text>
+                <postback>RECOMMEND SOFTWARE ENGINEER</postback>
             </button>
         </template>
     </category>
@@ -387,7 +470,7 @@
             <think><set name="math_level">practical</set></think>
             Practical implementation skills are valuable!
             <br></br><br></br>
-            You might excel as a Data Analyst using ML tools.
+            You might excel as a Data Analyst, where you can use ML tools without needing to build algorithms from scratch.
             <br></br>
             <srai>RECOMMEND DATA ANALYST</srai>
         </template>
@@ -437,6 +520,18 @@
         </template>
     </category>
     
+    <category>
+        <pattern>DEVOPS BEGINNER</pattern>
+        <template>
+            <think><set name="devops_focus">beginner</set></think>
+            That's completely fine! DevOps skills are typically learned on the job.
+            <br></br><br></br>
+            Your CS degree gives you the foundation, and companies often provide training for their specific tools.
+            <br></br>
+            <srai>RECOMMEND DEVOPS ENGINEER</srai>
+        </template>
+    </category>
+    
     <!-- ============================================ -->
     <!-- RECOMMENDATION OUTPUTS                       -->
     <!-- ============================================ -->
@@ -445,11 +540,11 @@
         <pattern>RECOMMEND SOFTWARE ENGINEER</pattern>
         <template>
             <think><set name="recommended_career">software_engineer</set></think>
-            🎯 Based on your responses, I recommend:
+            Based on your responses, I recommend:
             <br></br><br></br>
-            <b>SOFTWARE ENGINEER</b>
+            SOFTWARE ENGINEER
             <br></br><br></br>
-            Your skills in <get name="programming_style"/> programming and interest in building applications make you an excellent fit for software engineering!
+            Your interests and skills align well with software engineering! This role involves designing, developing, testing, and maintaining software applications and systems.
             <br></br><br></br>
             <button>
                 <text>Learn More About Software Engineer</text>
@@ -470,11 +565,11 @@
         <pattern>RECOMMEND DATA ANALYST</pattern>
         <template>
             <think><set name="recommended_career">data_analyst</set></think>
-            🎯 Based on your responses, I recommend:
+            Based on your responses, I recommend:
             <br></br><br></br>
-            <b>DATA ANALYST</b>
+            DATA ANALYST
             <br></br><br></br>
-            Your analytical mindset and interest in working with data make you a great candidate for data analysis roles!
+            Your analytical interests make you a great candidate for data analysis! This role involves collecting, processing, and analyzing data to help organizations make informed decisions.
             <br></br><br></br>
             <button>
                 <text>Learn More About Data Analyst</text>
@@ -495,11 +590,11 @@
         <pattern>RECOMMEND CYBERSECURITY ANALYST</pattern>
         <template>
             <think><set name="recommended_career">cybersecurity_analyst</set></think>
-            🎯 Based on your responses, I recommend:
+            Based on your responses, I recommend:
             <br></br><br></br>
-            <b>CYBERSECURITY ANALYST</b>
+            CYBERSECURITY ANALYST
             <br></br><br></br>
-            Your interest in security and protecting systems makes you an ideal fit for cybersecurity!
+            Your interest in security makes you an ideal fit for cybersecurity! This role involves protecting computer systems and networks from cyber threats and security breaches.
             <br></br><br></br>
             <button>
                 <text>Learn More About Cybersecurity Analyst</text>
@@ -520,11 +615,11 @@
         <pattern>RECOMMEND AI ML ENGINEER</pattern>
         <template>
             <think><set name="recommended_career">ai_ml_engineer</set></think>
-            🎯 Based on your responses, I recommend:
+            Based on your responses, I recommend:
             <br></br><br></br>
-            <b>AI/MACHINE LEARNING ENGINEER</b>
+            AI/MACHINE LEARNING ENGINEER
             <br></br><br></br>
-            Your mathematical foundation and passion for AI make you well-suited for machine learning engineering!
+            Your interest in AI and mathematical foundation make you well-suited for machine learning engineering! This role involves designing, building, and deploying AI systems and machine learning models.
             <br></br><br></br>
             <button>
                 <text>Learn More About AI/ML Engineer</text>
@@ -545,11 +640,11 @@
         <pattern>RECOMMEND DEVOPS ENGINEER</pattern>
         <template>
             <think><set name="recommended_career">devops_engineer</set></think>
-            🎯 Based on your responses, I recommend:
+            Based on your responses, I recommend:
             <br></br><br></br>
-            <b>DEVOPS ENGINEER</b>
+            DEVOPS ENGINEER
             <br></br><br></br>
-            Your expertise in infrastructure and automation makes you a perfect match for DevOps engineering!
+            Your interest in infrastructure and automation makes you a good match for DevOps engineering! This role involves automating software deployment, managing cloud infrastructure, and ensuring system reliability.
             <br></br><br></br>
             <button>
                 <text>Learn More About DevOps Engineer</text>
