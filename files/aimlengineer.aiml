@@ -1,4 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main AI/ML Engineer Pattern -->
+    <category>
+        <pattern>AI ML ENGINEER</pattern>
+        <template>
+            AI/MACHINE LEARNING ENGINEER
+            <br></br><br></br>
+            AI and Machine Learning engineers design, build, and deploy artificial intelligence systems and machine learning models. They develop algorithms that enable computers to learn from data and make intelligent decisions without explicit programming.
+            <br></br><br></br>
+            KEY RESPONSIBILITIES:
+            <br></br>
+            - Designing and implementing machine learning algorithms
+            <br></br>
+            - Training and optimizing ML models on large datasets
+            <br></br>
+            - Deploying AI systems into production environments
+            <br></br>
+            - Evaluating model performance and fine-tuning parameters
+            <br></br>
+            - Researching new ML techniques and methodologies
+            <br></br>
+            - Collaborating with data scientists and software engineers
+            <br></br><br></br>
+            REQUIRED SKILLS:
+            <br></br>
+            - Python and ML libraries (TensorFlow, PyTorch, scikit-learn)
+            <br></br>
+            - Strong mathematics (linear algebra, calculus, statistics)
+            <br></br>
+            - Machine learning algorithms and deep learning
+            <br></br>
+            - Data preprocessing and feature engineering
+            <br></br>
+            - Model deployment and MLOps
+            <br></br>
+            - Cloud platforms (AWS, Google Cloud, Azure)
+            <br></br><br></br>
+            <link>
+                <text>Learn more about AI/ML Engineers</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm</url>
+            </link>
+            <br></br><br></br>
+            <button>
+                <text>Explore Other Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Career Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for AI/ML Engineer -->
+    <category>
+        <pattern>MACHINE LEARNING ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>ML ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>ARTIFICIAL INTELLIGENCE ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>AI ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT AI ML ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT MACHINE LEARNING ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS AN AI ENGINEER</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES AN AI ENGINEER DO</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ AI ENGINEER ^</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ ML ENGINEER ^</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ MACHINE LEARNING ENGINEER ^</pattern>
+        <template><srai>AI ML ENGINEER</srai></template>
+    </category>
+    
 </aiml>

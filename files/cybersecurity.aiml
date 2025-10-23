@@ -1,4 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main Cybersecurity Analyst Pattern -->
+    <category>
+        <pattern>CYBERSECURITY ANALYST</pattern>
+        <template>
+            CYBERSECURITY ANALYST
+            <br></br><br></br>
+            Cybersecurity analysts protect computer systems and networks from cyber threats, security breaches, and attacks. They monitor systems for suspicious activity, implement security measures, and respond to security incidents.
+            <br></br><br></br>
+            KEY RESPONSIBILITIES:
+            <br></br>
+            - Monitoring networks for security breaches and intrusions
+            <br></br>
+            - Installing and configuring security software and firewalls
+            <br></br>
+            - Conducting vulnerability assessments and penetration testing
+            <br></br>
+            - Investigating security incidents and documenting findings
+            <br></br>
+            - Developing security policies and best practices
+            <br></br>
+            - Staying updated on latest cybersecurity threats and trends
+            <br></br><br></br>
+            REQUIRED SKILLS:
+            <br></br>
+            - Network security and protocols (TCP/IP, DNS, VPN)
+            <br></br>
+            - Security tools (firewalls, IDS/IPS, SIEM)
+            <br></br>
+            - Operating systems security (Windows, Linux)
+            <br></br>
+            - Threat detection and incident response
+            <br></br>
+            - Security frameworks (NIST, ISO 27001)
+            <br></br>
+            - Analytical and problem-solving skills
+            <br></br><br></br>
+            <link>
+                <text>Learn more about Cybersecurity Analysts</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</url>
+            </link>
+            <br></br><br></br>
+            <button>
+                <text>Explore Other Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Career Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for Cybersecurity Analyst -->
+    <category>
+        <pattern>CYBER SECURITY ANALYST</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SECURITY ANALYST</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>INFORMATION SECURITY ANALYST</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT CYBERSECURITY ANALYST</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS A CYBERSECURITY ANALYST</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A CYBERSECURITY ANALYST DO</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>CYBERSECURITY</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CYBERSECURITY ANALYST ^</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SECURITY ANALYST ^</pattern>
+        <template><srai>CYBERSECURITY ANALYST</srai></template>
+    </category>
+    
 </aiml>

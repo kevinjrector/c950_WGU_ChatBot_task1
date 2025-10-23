@@ -1,4 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main Data Analyst Pattern -->
+    <category>
+        <pattern>DATA ANALYST</pattern>
+        <template>
+            DATA ANALYST
+            <br></br><br></br>
+            Data analysts collect, process, and perform statistical analyses on large datasets. They translate data into insights that help organizations make informed business decisions through visualizations, reports, and presentations.
+            <br></br><br></br>
+            KEY RESPONSIBILITIES:
+            <br></br>
+            - Collecting and cleaning data from various sources
+            <br></br>
+            - Performing statistical analysis to identify trends and patterns
+            <br></br>
+            - Creating data visualizations and dashboards
+            <br></br>
+            - Generating reports and presenting findings to stakeholders
+            <br></br>
+            - Collaborating with teams to define data requirements
+            <br></br><br></br>
+            REQUIRED SKILLS:
+            <br></br>
+            - SQL for database querying
+            <br></br>
+            - Python or R for data analysis
+            <br></br>
+            - Data visualization tools (Tableau, Power BI, matplotlib)
+            <br></br>
+            - Statistical analysis and mathematics
+            <br></br>
+            - Excel and spreadsheet proficiency
+            <br></br>
+            - Critical thinking and attention to detail
+            <br></br><br></br>
+            <link>
+                <text>Learn more about Data Analysts</text>
+                <url>https://www.bls.gov/ooh/math/data-scientists.htm</url>
+            </link>
+            <br></br><br></br>
+            <button>
+                <text>Explore Other Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Career Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for Data Analyst -->
+    <category>
+        <pattern>DATA ANALYSIS</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT DATA ANALYST</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS A DATA ANALYST</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A DATA ANALYST DO</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DATA ANALYST ^</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DATA ANALYSIS ^</pattern>
+        <template><srai>DATA ANALYST</srai></template>
+    </category>
+    
 </aiml>

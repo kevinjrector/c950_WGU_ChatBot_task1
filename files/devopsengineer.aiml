@@ -1,4 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- Main DevOps Engineer Pattern -->
+    <category>
+        <pattern>DEVOPS ENGINEER</pattern>
+        <template>
+            DEVOPS ENGINEER
+            <br></br><br></br>
+            DevOps engineers bridge the gap between software development and IT operations. They automate and streamline software deployment processes, manage cloud infrastructure, and ensure system reliability and scalability.
+            <br></br><br></br>
+            KEY RESPONSIBILITIES:
+            <br></br>
+            - Automating software deployment and delivery pipelines
+            <br></br>
+            - Managing cloud infrastructure (AWS, Azure, Google Cloud)
+            <br></br>
+            - Implementing containerization and orchestration (Docker, Kubernetes)
+            <br></br>
+            - Monitoring system performance and reliability
+            <br></br>
+            - Writing infrastructure as code (Terraform, Ansible)
+            <br></br>
+            - Collaborating with development teams on CI/CD processes
+            <br></br><br></br>
+            REQUIRED SKILLS:
+            <br></br>
+            - Cloud platforms (AWS, Azure, Google Cloud)
+            <br></br>
+            - Containerization (Docker, Kubernetes)
+            <br></br>
+            - CI/CD tools (Jenkins, GitLab CI, GitHub Actions)
+            <br></br>
+            - Scripting languages (Python, Bash, PowerShell)
+            <br></br>
+            - Infrastructure as Code (Terraform, CloudFormation)
+            <br></br>
+            - Linux/Unix system administration
+            <br></br>
+            - Monitoring tools (Prometheus, Grafana, ELK Stack)
+            <br></br><br></br>
+            <link>
+                <text>Learn more about DevOps Engineers</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+            </link>
+            <br></br><br></br>
+            <button>
+                <text>Explore Other Careers</text>
+                <postback>SHOW ALL CAREERS</postback>
+            </button>
+            <button>
+                <text>Get Career Recommendation</text>
+                <postback>ASSESS MY SKILLS</postback>
+            </button>
+            <button>
+                <text>Return to Main Menu</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Alternative patterns for DevOps Engineer -->
+    <category>
+        <pattern>DEVOPS</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>DEV OPS ENGINEER</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT DEVOPS ENGINEER</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TELL ME ABOUT DEVOPS</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS A DEVOPS ENGINEER</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A DEVOPS ENGINEER DO</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DEVOPS ENGINEER ^</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DEVOPS ^</pattern>
+        <template><srai>DEVOPS ENGINEER</srai></template>
+    </category>
+    
 </aiml>
