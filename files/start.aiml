@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
-    <!-- Initial greeting and entry point -->
+    <!-- Initial greeting and entry point TEST COMMIT-->
     <category>
         <pattern>START</pattern>
         <template>
